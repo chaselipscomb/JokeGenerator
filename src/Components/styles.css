@@ -1,0 +1,89 @@
+.textbox {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  height: 60vh;
+  margin-top: 5vh;
+  align-self: center;
+  border-radius: 25px;
+  box-shadow: 0px 0px 5px grey;
+  padding: 10px;
+  box-sizing: border-box;
+  width: 475px;
+}
+.ball {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 0.7;
+}
+.setup {
+  /* display: none; */
+  max-width: 80%;
+  color: whitesmoke;
+  font-size: x-large;
+  border-radius: 10px;
+  margin-top: 10px;
+  align-self: flex-start;
+  padding: 5px;
+}
+.delivery {
+  /* display: none; */
+  max-width: 80%;
+  color: whitesmoke;
+  font-size: x-large;
+  border-radius: 10px;
+  padding: 5px;
+  margin-top: 10px;
+  align-self: flex-end;
+}
+.buttons {
+  position: absolute;
+  bottom: 5px;
+}
+.button {
+  color: white;
+  font-size: x-large;
+  padding: 5px;
+  background-color: #3cc157;
+}
+.button:hover {
+  cursor: pointer;
+}
+.button:active {
+  cursor: grabbing;
+}
+#green {
+  background-color: #3cc157;
+}
+#blue {
+  background-color: #2aa7ff;
+  border-radius: 15px 0px 0px 15px;
+}
+#red {
+  background-color: #f85f36;
+  border-radius: 0px 15px 15px 0px;
+}
+/* .buttonOne {
+    background-color: #1B1B1B;
+}
+.buttonOne {
+    background-color: #FCBC0F;
+} */
+@media only screen and (max-width: 800px) {
+  #logo {
+    width: 90vw;
+  }
+}
+@media only screen and (max-width: 475px) {
+  #logo {
+    height: 75px;
+  }
+  .textbox {
+    width: 95vw;
+  }
+  .button {
+    font-size: small;
+  }
+}
